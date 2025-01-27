@@ -74,22 +74,14 @@ The provided `Makefile` automates the compilation and execution process:
 
 #### Process Tree Visualization
 
-Using the `ps` command, the following processes were displayed:
-- **bash**: This represents my terminal shell.
-- **a.out**: This is my custom shell.
-- **sh**: A child process created by my custom shell to handle commands.
-- **ps**: The command used to display the list of processes.
-
-This confirms that `a.out` (my shell) successfully created additional processes like `sh`.
-
-Using the `pstree` command, the following relationship was visualized:
-
 ![Process Tree Visualization](Pstree_Visualization.png "Process Tree")
 
 This shows:
-- **a.out (PID 21454)**: The custom shell acting as the parent process.
-- **sh (PID 22231)**: A child process spawned by the custom shell.
-- **pstree (PID 22232)**: A process created by `sh` to visualize the process tree.
+- **bash (PID 15378)**: This represents my terminal shell.
+- **make (PID 15477)**: A child process of bash responsible for building or compiling something.
+- **MyShell (PID 15483)**: Another child process of bash.This is my custom shell.
+- **sh (PID 17629)**: A child process created by MyShell.
+- **pstree (PID 17630)**: A child process created by sh to generate the process tree visualization.
 
 The process tree demonstrates that the custom shell is effectively managing and creating child processes as required.
 
