@@ -37,7 +37,7 @@ The provided `Makefile` automates the compilation and execution process:
 
 ### Command Processing
 1. Supports complex command parsing
-2. Handles up to 128 arguments per command
+2. Handles up to 256 arguments per command
 3. Supports input and output redirection
 4. Enables piping between commands
 5. Allows background process execution
