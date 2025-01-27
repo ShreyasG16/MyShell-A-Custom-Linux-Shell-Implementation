@@ -7,6 +7,7 @@ MyShell is a custom Linux Shell Implementation written in C, providing basic she
 ## Features
 
 ### Built-in Commands
+- 📂 `ls`: List all files and directories in current directory
 - 📁 `cd`: Change current directory
 - ❓ `help`: Display help information
 - ❌ `exit`: Exit the shell
